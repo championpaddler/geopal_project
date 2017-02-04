@@ -1,0 +1,76 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#floating-panel {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	width: 15%;
+	z-index: 5;
+}
+#floating-panel input {
+	background-color: #FFF;
+	display: block;
+	margin: 10px auto;
+	width: 100%;
+	padding: 5px;
+	cursor: pointer;
+}
+#map {
+	height: 100%;
+}
+
+.dialog {
+	overflow: visible !important;
+}
+.dialog .table-container {
+	max-height: 600px;
+	overflow: auto;
+}
+.dialog input[type='button'] {
+	width: 80px;
+}
+.dialog select {
+	min-width: 200px;
+}
+.dialog input[type='file'] {
+	width: 100%;
+	border: 1px #CCC solid;
+}
+.dialog input.close {
+	position: absolute;
+	right: 10px;
+	bottom: -20px;
+}
+.dialog input.confirm {
+	position: absolute;
+	right: 100px;
+	bottom: -20px;
+}
+.icon-preview {
+	float: left;
+	margin-right: 10px;
+	border: 1px #CCC solid;
+	height: 22px;
+	width: 22px;
+}
+
+table {
+	width: 100%;
+	max-height: 500px;
+	border-collapse: collapse;
+}
+.table-container {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+th, td {
+	border: 1px #ccc solid;
+	padding: 5px;
+}
+thead tr {background: #DDD}
+tbody tr:nth-child(even) {background: #EEE}
+tbody tr:nth-child(odd) {background: #FFF}

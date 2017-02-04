@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "GeoPal",
+			"address": "12-13 Temple Ln S, Dublin Southside, Dublin",
+			"description": "geopalsolutions.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+			  -6.264457,
+			  53.345283
+			]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Trinity College",
+			"address": "College Green, Dublin 2",
+			"description": "tcd.ie"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+			  -6.254546,
+			  53.343867
+			]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "St Stephen's Green",
+			"address": "St Stephen's Green, Dublin 2",
+			"description": "heritageireland.ie"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+			  -6.259327,
+			  53.337853
+			]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Phoenix Park",
+			"address": "Phoenix Park, Dublin 8",
+			"description": "phoenixpark.ie"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+			  -6.329428,
+			  53.355994
+			]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Dublin Airport",
+			"address": "Collinstown, Dublin",
+			"description": "dublinairport.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+			  -6.240037,
+			  53.426019
+			]
+		}
+	}
+  ]
+}

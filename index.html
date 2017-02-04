@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>GeoPal Project 2017</title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/dialogHandler.js"></script>
+		<script src="js/gmapHandler.js"></script>
+		<script src="js/fileHandler.js"></script>
+	</head>
+
+	<body>
+
+		<div id="floating-panel">
+			<input type="button" id="btn-upload-geojson" value="Upload GeoJson" />
+			<input type="button" id="btn-use-lasso" value="Lasso" onclick="useLasso('POLYGON')" />
+			<input type="button" id="btn-change-icons-color" value="Change Icon Color" />
+		</div>
+		<div id="map"></div>
+
+		<div class="dialog-container">
+		
+			<div class="dialog" id="dialog-upload-geojson"  title="Upload GeoJson file">
+				<p>Select File To Upload</p>
+				<input id="file" type="file" name="geojsonfile" />
+				<input class="confirm" type="button" value="Upload" onclick="readFile();" />
+				<input class="close" type="button" value="Cancel" />
+			</div>
+			
+			<div class="dialog" id="dialog-use-lasso" title="Selected Marker Points">
+				<div class="table-container">
+					<table>
+						<thead>
+							<tr><th>Name</th><th>Address</th><th>Lat</th><th>Long</th></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+				<input class="close" type="button" value="Close" />
+			</div>
+			
+			<div class="dialog" id="dialog-change-icons-color" title="Change Icons Color">
+				<img class="icon-preview" src="http://maps.google.com/mapfiles/ms/micons/red-dot.png" />
+				<select name="colors">
+					<option>red</option>
+					<option>green</option>
+					<option>yellow</option>
+					<option>purple</option>
+					<option>pink</option>
+					<option>orange</option>
+				</select>
+				<input class="confirm" type="button" value="Change" onclick="changeIconsColor();" />
+				<input class="close" type="button" value="Cancel" />
+			</div>
+			
+		</div>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4ehih16WS9h5BF13hcWERuiwipi-YkWU&libraries=drawing&callback=initMap"></script>
+
+	</body>
+
+</html>

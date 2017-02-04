@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "GeoPal",
+			"address": "12-13 Temple Ln S, Dublin Southside, Dublin",
+			"description": "geopalsolutions.com"
+		},
+		"geometry": {
+			"type": "Point"
+			"coordinates": [
+			  -6.264457,
+			  53.345283
+			]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Trinity College",
+			"address": "College Green, Dublin 2",
+			"description": "tcd.ie"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+			  -6.254546,
+			  53.343867
+			]
+		}
+	},
+  ]
+}
